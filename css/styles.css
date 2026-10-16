@@ -211,17 +211,40 @@ body {
     flex-direction:row;
   }
 }
-.body-card {
-  
-border: 1px solid var {--color-border};
-border-radius: 8px;
-margin-top: 1rem;
-}
-.body-card image {
- witdh: 100%;
- height: auto;
- border-radius: 8px;
-}
-.body-card-content {
+
+
+.body-card_content {
   padding: 1rem;
 }
+
+.card {
+ 
+  gap: 1.75rem;
+  margin-top: 1.5rem;
+  padding: 2px;
+  border: 2px solid var(--color-border);
+  border-radius: 8px;
+  width: 100%;
+
+}
+#image {
+  width: 100px;
+  height: 150px;
+  
+  margin-bottom: 1rem;
+
+  
+}
+@media (min-width: 250px) {
+  .card {
+    width: 250px;
+    align-items: center;
+  }
+  
+
+}
+.section > .card {
+  margin-left: 7rem;   /* mismo ancho que la columna de fechas */
+  width: auto;         /* ocupa el resto del ancho sin salirse */
+}
+
